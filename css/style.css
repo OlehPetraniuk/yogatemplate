@@ -1418,3 +1418,40 @@ a {
   cursor: zoom-in; }
   .img-opacity:hover img {
     opacity: .5; }
+
+.pricing {
+  border: 1px dashed #ccc; }
+  .pricing.no-border {
+    border: none; }
+  .pricing.bg-image {
+    position: relative; }
+    .pricing.bg-image:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(135, 229, 218, 0.9);
+      z-index: 2; }
+  .pricing .pricing-content {
+    position: relative;
+    z-index: 3;
+    color: #fff; }
+    .pricing .pricing-content h3 {
+      color: #fff; }
+  .pricing .btn {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .pricing .btn.btn-primary {
+      color: #fff; }
+    .pricing .btn.btn-outline-white {
+      border-color: #fff;
+      border-width: 2px;
+      color: #fff; }
+      .pricing .btn.btn-outline-white:hover {
+        background: #000;
+        color: #fff;
+        border-color: #000; }
+    .pricing .btn.pill {
+      border-radius: 30px; }
